@@ -41,3 +41,6 @@ Y: 0 1 2 3 4 5 6 7 8 9 10
 效果如下：
 
 ![](IDService1.png)
+
+
+[身份证地区码](http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/)来自国家统计局

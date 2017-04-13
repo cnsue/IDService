@@ -35,7 +35,7 @@ class IDServiceUtil: NSObject {
     }
     //查询发证地
     static func matchArea(str : String) -> String {
-        let path = Bundle.main.path(forResource: "IDArea", ofType: nil)
+        let path = Bundle.main.path(forResource: "IDArea", ofType: "json")
     
         do{
             
@@ -43,7 +43,13 @@ class IDServiceUtil: NSObject {
             let dic = try JSONSerialization.jsonObject(with: data as Data, options: .mutableContainers) as! NSDictionary
             let area = dic.object(forKey: str)
             if area != nil {
-                return area as! String
+                //香港 澳门 比较特殊
+                if str.substring(from: str.index(str.startIndex, offsetBy: 2)) == "0000" {
+                    return area as! String
+                }
+                let province = dic.object(forKey: str.substring(to: str.index(str.startIndex, offsetBy: 2)) + "0000" )  as! String
+                let city = dic.object(forKey: str.substring(to: str.index(str.startIndex, offsetBy: 4)) + "00")  as! String
+                return province + city + (area as! String)
             }
             else
             {

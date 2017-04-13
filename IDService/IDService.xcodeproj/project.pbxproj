@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		313A8CB41E9E3631005967B6 /* IDArea in Resources */ = {isa = PBXBuildFile; fileRef = 313A8CB31E9E3631005967B6 /* IDArea */; };
+		313A8CC51E9F621A005967B6 /* IDArea.json in Resources */ = {isa = PBXBuildFile; fileRef = 313A8CC41E9F621A005967B6 /* IDArea.json */; };
 		31A757131E9DC72700B1C367 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A757121E9DC72700B1C367 /* AppDelegate.swift */; };
 		31A757151E9DC72700B1C367 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A757141E9DC72700B1C367 /* ViewController.swift */; };
 		31A757181E9DC72700B1C367 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31A757161E9DC72700B1C367 /* Main.storyboard */; };
@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		313A8CB31E9E3631005967B6 /* IDArea */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IDArea; sourceTree = "<group>"; };
+		313A8CC41E9F621A005967B6 /* IDArea.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = IDArea.json; sourceTree = "<group>"; };
 		31A7570F1E9DC72700B1C367 /* IDService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IDService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31A757121E9DC72700B1C367 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31A757141E9DC72700B1C367 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 		31A757111E9DC72700B1C367 /* IDService */ = {
 			isa = PBXGroup;
 			children = (
-				313A8CB31E9E3631005967B6 /* IDArea */,
+				313A8CC41E9F621A005967B6 /* IDArea.json */,
 				31A757121E9DC72700B1C367 /* AppDelegate.swift */,
 				31A757141E9DC72700B1C367 /* ViewController.swift */,
 				31A757241E9DCC9300B1C367 /* ToastView.swift */,
@@ -133,8 +133,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				313A8CB41E9E3631005967B6 /* IDArea in Resources */,
 				31A7571D1E9DC72700B1C367 /* LaunchScreen.storyboard in Resources */,
+				313A8CC51E9F621A005967B6 /* IDArea.json in Resources */,
 				31A7571A1E9DC72700B1C367 /* Assets.xcassets in Resources */,
 				31A757181E9DC72700B1C367 /* Main.storyboard in Resources */,
 			);
